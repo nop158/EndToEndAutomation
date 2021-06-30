@@ -1,4 +1,4 @@
-from selenium.webdriver import Chrome,Firefox
+from selenium.webdriver import Chrome, Firefox
 from Library import ConfigReader
 
 def start_browser():
