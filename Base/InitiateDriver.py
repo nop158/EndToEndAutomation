@@ -14,7 +14,7 @@ def start_browser():
         driver = Chrome(executable_path=path)
 
     driver.get(ConfigReader.readConfigData('Details','URL'))
-    driver.implicitly_wait(5)
+    driver.implicitly_wait(30)
     driver.maximize_window()
     return driver
 
