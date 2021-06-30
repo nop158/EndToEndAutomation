@@ -4,10 +4,10 @@ from Library import ConfigReader
 def start_browser():
     global driver
     if (ConfigReader.readConfigData('Details', 'Browser')) == "chrome":
-        path = "C:/Selenium/EndToEndAutomation/drivers/chromedriver.exe"
+        path = "C:\\Selenium\\EndToEndAutomation\\drivers\\chromedriver.exe"
         driver = Chrome(executable_path=path)
     elif ConfigReader.readConfigData('Details', 'Browser') == "firefox":
-        path = "C:/Selenium/EndToEndAutomation/drivers/geckodriver.exe"
+        path = "C:\\Selenium\\EndToEndAutomation\\drivers\\geckodriver.exe"
         driver = Firefox(executable_path=path)
     else:
         path = "C:/Selenium/EndToEndAutomation/drivers/chromedriver.exe"
